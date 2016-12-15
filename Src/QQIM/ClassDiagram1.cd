@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ClientView.AppContext" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AUgAAAAAAAAQABAAAAAAAAAABAQAAgACAIAAICAAAAE=</HashCode>
+      <FileName>Class\AppContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientView.ClientManager" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AADkSoAAQCAAAAECBQUqCAAICghQEAEAQCASIAABiAA=</HashCode>
+      <FileName>Class\ClientManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientView.ConnDbForAcccess" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAkAAAAAAAAAAAAAAAkAACAAAAAAAgA=</HashCode>
+      <FileName>Class\ConnDb.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientView.Functions" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAABABAAAAAAAAgAQAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Class\Functions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientView.ImageClass" Collapsed="true">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABIAAAAAAAAAAAAEAAgAAAAAAAAAAAAU=</HashCode>
+      <FileName>Class\ImageClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientView.MsgContext" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EQAAAAACAAoAIAAAAAACEAABAAAAAAAAAAQAAAAIAAA=</HashCode>
+      <FileName>Class\MsgContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientView.Program" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Class\Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientView.BloodType" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entity\BloodType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientView.FilesTransList" Collapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAAAQAAAAAGAAAAAAACAAAABAAA=</HashCode>
+      <FileName>Entity\FilesTransList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientView.Star" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entity\Star.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientView.CtoCManager" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAACAAAAAAAAEAAAAAAAgQAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>FilesTrans\CtoCManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientView.TclientConnection" Collapsed="true">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAIAAICAAQCgAAAACAAAgBAAACAABAEAAAAgAA=</HashCode>
+      <FileName>FilesTrans\TclientConnection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientView.TListener" Collapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAAAQAAAAAAAAQAAAAEAAAAAIA=</HashCode>
+      <FileName>FilesTrans\TListener.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientView.TserverConnection" Collapsed="true">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQCAAAAAAAACAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAk=</HashCode>
+      <FileName>FilesTrans\TserverConnection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientView.FrmChat" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>FCy4CAtVISAAQJKhgoSFYJESpNA5KAeCGCQfVcQFDyA=</HashCode>
+      <FileName>Forms\FrmChat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientView.FrmLogin" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IgMAAACAAKAAQQAAAAiAAAACIAAABADAgRQCEAQAYAA=</HashCode>
+      <FileName>Forms\FrmLogin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientView.FrmLoginValidate" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAEAIACAAAAEAABCgABACAAAgAAEAAAYAAgAAAAA=</HashCode>
+      <FileName>Forms\FrmLoginValidate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientView.FrmMain" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IHSKFECdCHQgoQDTAkCAJAgDJCAjUClBFAEACEJSQ0g=</HashCode>
+      <FileName>Forms\FrmMain.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientView.FrmModifUserInfo" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>/xAwhAIAACUgBBEQBECASRAiCAAMYAAQEMohAFFEUAQ=</HashCode>
+      <FileName>Forms\FrmModifUserInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientView.FrmRegister" Collapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>+RAwhQIAACUgBBEQBECASRIiCAAMYAAQEIohAFFEUAQ=</HashCode>
+      <FileName>Forms\FrmRegister.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientView.FrmSearch" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EgSgmQIAACwACBAgJISAAQACACAoYgAAAYhEAAYhUEA=</HashCode>
+      <FileName>Forms\FrmSearch.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientView.FrmSearchFriend" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgKEAAACQAABApAAGAAAACEACAAAAAAAAAAwAAAAA=</HashCode>
+      <FileName>Forms\FrmSearchFriend.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientView.FrmSysMessage" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACEAAACAAAhEIAACAAGAGAIABQAAABAAQACAAAAA=</HashCode>
+      <FileName>Forms\FrmSysMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientView.FrmViewUserInfo" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAggAIAACUgABEABECAURAiAAAIYAAAEMggAFBEUQQ=</HashCode>
+      <FileName>Forms\FrmViewUserInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientView.XmlHelper" Collapsed="true">
+    <Position X="7.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAgAAAAAAAAAACABAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helper\XmlHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientView.StatusImages" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAWEABgAAAYIgAAgAAAhGABIAQAAAAAAAECsCAAAUKA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientView.TimerEx" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TimerEx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientView.UserFace" Collapsed="true">
+    <Position X="5.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAABAAAAAAAADBAJFAj+HwYEAAAAAAQCAAAAAII=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientView.Properties.Settings" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABIAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Microsoft YaHei" Size="9.22" />
+</ClassDiagram>

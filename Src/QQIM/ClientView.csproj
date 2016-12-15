@@ -1,0 +1,629 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{64374CA3-5F15-47ED-AC81-0D57E2BA3C62}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ClientView</RootNamespace>
+    <AssemblyName>公安办公平台</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>D:\快盘1\软件工程\源代码\内网交流\C#\公安办公系统\发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Title.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>68CC79F4C19908D0EDB2BA50BD1AAE09BEE54082</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>ClientView_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ALQQControl">
+      <HintPath>C:\Users\Administrator\Desktop\AlQQTest\AlQQtest[测试]\ALQQClient\ALQQControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.DynamicGifLib, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\Users\Administrator\Desktop\AlQQTest\AlQQtest[测试]\ALQQClient\Interop.DynamicGifLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.ImageOleLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\Users\Administrator\Desktop\AlQQTest\AlQQtest[测试]\ALQQClient\Interop.ImageOleLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Common\Dlls\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="公安办公平台, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <ExecutableExtension>.exe</ExecutableExtension>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\AppContext.cs" />
+    <Compile Include="Entity\ChatState.cs" />
+    <Compile Include="FilesTrans\CtoCManager.cs" />
+    <Compile Include="Class\ImageClass.cs" />
+    <Compile Include="Class\ConnDb.cs" />
+    <Compile Include="Class\Functions.cs" />
+    <Compile Include="FilesTrans\TclientConnection.cs" />
+    <Compile Include="FilesTrans\TListener.cs" />
+    <Compile Include="FilesTrans\TserverConnection.cs" />
+    <Compile Include="Entity\BloodType.cs" />
+    <Compile Include="Class\ClientManager.cs" />
+    <Compile Include="Entity\FilesTransList.cs" />
+    <Compile Include="Forms\AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmUrlManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmUrlManager.Designer.cs">
+      <DependentUpon>FrmUrlManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmViewUserInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmViewUserInfo.Designer.cs">
+      <DependentUpon>FrmViewUserInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmModifUserInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmModifUserInfo.Designer.cs">
+      <DependentUpon>FrmModifUserInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmChat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmChat.Designer.cs">
+      <DependentUpon>FrmChat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmRegister.Designer.cs">
+      <DependentUpon>FrmRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmSearch.Designer.cs">
+      <DependentUpon>FrmSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmSearchFriend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmSearchFriend.Designer.cs">
+      <DependentUpon>FrmSearchFriend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmSysMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmSysMessage.Designer.cs">
+      <DependentUpon>FrmSysMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\MsgContext.cs" />
+    <Compile Include="Class\Program.cs" />
+    <Compile Include="Forms\MonitorClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MonitorClient.designer.cs">
+      <DependentUpon>MonitorClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Forms\FrmLoginValidate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmLoginValidate.Designer.cs">
+      <DependentUpon>FrmLoginValidate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\Star.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="StatusImages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StatusImages.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\XmlHelper.cs" />
+    <Compile Include="TimerEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserFace.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserFace.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmUrlManager.resx">
+      <DependentUpon>FrmUrlManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmViewUserInfo.resx">
+      <DependentUpon>FrmViewUserInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmModifUserInfo.resx">
+      <DependentUpon>FrmModifUserInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmChat.resx">
+      <DependentUpon>FrmChat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmRegister.resx">
+      <DependentUpon>FrmRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmSearch.resx">
+      <DependentUpon>FrmSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmSearchFriend.resx">
+      <DependentUpon>FrmSearchFriend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmSysMessage.resx">
+      <DependentUpon>FrmSysMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmLoginValidate.resx">
+      <DependentUpon>FrmLoginValidate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MonitorClient.resx">
+      <DependentUpon>MonitorClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatusImages.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>StatusImages.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClientView_TemporaryKey.pfx" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{0C3210BC-B6A0-4947-B95C-E1622E82507F}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entity\Entity.csproj">
+      <Project>{EB42355B-9F24-4615-8454-E9A233A16358}</Project>
+      <Name>Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QQControls\QQControls.csproj">
+      <Project>{91F83D30-0E8C-4168-BC7E-1DE22B6F6ABC}</Project>
+      <Name>QQControls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TConst\TConst.csproj">
+      <Project>{47C51446-811D-4535-BED2-57A892B8F18E}</Project>
+      <Name>TConst</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\status\QQ\login\Loading_1.gif" />
+    <None Include="bin\Debug\images\status\QQ\login\Loading_2.gif" />
+    <None Include="bin\Debug\images\status\QQ\login\Loading_3.gif" />
+    <None Include="bin\Debug\images\status\QQ\login\Loading_4.gif" />
+    <None Include="bin\Debug\images\status\QQ\login\Loading_5.gif" />
+    <None Include="bin\Debug\images\status\QQ\login\Loading_6.gif" />
+    <None Include="bin\Debug\images\图标.ico" />
+    <None Include="bin\Debug\images\Title.ico" />
+    <Content Include="Title.ico" />
+    <None Include="Resources\_1000.bmp" />
+    <EmbeddedResource Include="UserFace.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>UserFace.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Xml\BloodTypeInfo.xml" />
+    <EmbeddedResource Include="Xml\StarInfo.xml" />
+    <None Include="bin\Debug\images\status\away.png" />
+    <None Include="bin\Debug\images\status\busy.png" />
+    <None Include="bin\Debug\images\status\imoffline.png" />
+    <None Include="bin\Debug\images\status\imonline.png" />
+    <None Include="bin\Debug\images\status\invisible.png" />
+    <None Include="bin\Debug\images\status\mute.png" />
+    <None Include="bin\Debug\images\status\Qme.png" />
+    <None Include="bin\Debug\images\status\QQ\MM\away.ico" />
+    <None Include="bin\Debug\images\status\QQ\MM\busy.ico" />
+    <None Include="bin\Debug\images\status\QQ\MM\imonline.ico" />
+    <None Include="bin\Debug\images\status\QQ\MM\invisible.ico" />
+    <None Include="bin\Debug\images\status\QQ\MM\mute.ico" />
+    <None Include="bin\Debug\images\status\QQ\MM\offline.ico" />
+    <None Include="bin\Debug\images\status\QQ\MM\Qme.ico" />
+    <None Include="bin\Debug\images\status\QQ\login\Loading_1.ico" />
+    <None Include="bin\Debug\images\status\QQ\login\Loading_2.ico" />
+    <None Include="bin\Debug\images\status\QQ\login\Loading_3.ico" />
+    <None Include="bin\Debug\images\status\QQ\login\Loading_4.ico" />
+    <None Include="bin\Debug\images\status\QQ\login\Loading_5.ico" />
+    <None Include="bin\Debug\images\status\QQ\login\Loading_6.ico" />
+    <None Include="bin\Debug\images\status\QQ\GG\away.ico" />
+    <None Include="bin\Debug\images\status\QQ\GG\busy.ico" />
+    <None Include="bin\Debug\images\status\QQ\GG\imonline.ico" />
+    <None Include="bin\Debug\images\status\QQ\GG\invisible.ico" />
+    <None Include="bin\Debug\images\status\QQ\GG\mute.ico" />
+    <None Include="bin\Debug\images\status\QQ\GG\offline.ico" />
+    <None Include="bin\Debug\images\status\QQ\GG\Qme.ico" />
+    <None Include="bin\Debug\images\tools\message.png" />
+    <None Include="bin\Debug\images\Head\1.png" />
+    <None Include="bin\Debug\images\Head\2.png" />
+    <None Include="bin\Debug\images\Head\3.png" />
+    <None Include="bin\Debug\images\Head\4.png" />
+    <None Include="bin\Debug\images\Head\5.png" />
+    <None Include="bin\Debug\images\Head\6.png" />
+    <None Include="bin\Debug\images\Head\7.png" />
+    <None Include="bin\Debug\images\Head\8.png" />
+    <None Include="bin\Debug\images\Head\9.png" />
+    <None Include="bin\Debug\images\Head\10.png" />
+    <None Include="bin\Debug\images\Head\11.png" />
+    <None Include="bin\Debug\images\Head\12.png" />
+    <None Include="bin\Debug\images\Head\13.png" />
+    <None Include="bin\Debug\images\Head\14.png" />
+    <None Include="bin\Debug\images\Head\15.png" />
+    <None Include="bin\Debug\images\Head\16.png" />
+    <None Include="bin\Debug\images\Head\17.png" />
+    <None Include="bin\Debug\images\Head\18.png" />
+    <None Include="bin\Debug\images\Head\19.png" />
+    <None Include="bin\Debug\images\Head\20.png" />
+    <None Include="bin\Debug\images\Head\21.png" />
+    <None Include="bin\Debug\images\Head\22.png" />
+    <None Include="bin\Debug\images\Head\23.png" />
+    <None Include="bin\Debug\images\Head\24.png" />
+    <None Include="bin\Debug\images\Head\25.png" />
+    <None Include="bin\Debug\images\Head\26.png" />
+    <None Include="bin\Debug\images\Head\27.png" />
+    <None Include="bin\Debug\images\Head\28.png" />
+    <None Include="bin\Debug\images\Head\29.png" />
+    <None Include="bin\Debug\images\Head\30.png" />
+    <None Include="bin\Debug\images\Head\31.png" />
+    <None Include="bin\Debug\images\Head\32.png" />
+    <None Include="bin\Debug\images\Head\33.png" />
+    <None Include="bin\Debug\images\Head\34.png" />
+    <None Include="bin\Debug\images\Head\35.png" />
+    <None Include="bin\Debug\images\Head\36.png" />
+    <None Include="bin\Debug\images\Head\37.png" />
+    <None Include="bin\Debug\images\Head\38.png" />
+    <None Include="bin\Debug\images\Head\39.png" />
+    <None Include="bin\Debug\images\Head\40.png" />
+    <None Include="bin\Debug\images\Head\41.png" />
+    <None Include="bin\Debug\images\Head\42.png" />
+    <None Include="bin\Debug\images\Head\43.png" />
+    <None Include="bin\Debug\images\Head\44.png" />
+    <None Include="bin\Debug\images\Head\45.png" />
+    <None Include="bin\Debug\images\Head\46.png" />
+    <None Include="bin\Debug\images\Head\47.png" />
+    <None Include="bin\Debug\images\Head\48.png" />
+    <None Include="bin\Debug\images\Head\49.png" />
+    <None Include="bin\Debug\images\Head\50.png" />
+    <None Include="bin\Debug\images\Head\51.png" />
+    <None Include="bin\Debug\images\Head\52.png" />
+    <None Include="bin\Debug\images\Head\53.png" />
+    <None Include="bin\Debug\images\Head\54.png" />
+    <None Include="bin\Debug\images\Head\55.png" />
+    <None Include="bin\Debug\images\Head\56.png" />
+    <None Include="bin\Debug\images\Head\57.png" />
+    <None Include="bin\Debug\images\Head\58.png" />
+    <None Include="bin\Debug\images\Head\59.png" />
+    <None Include="bin\Debug\images\Head\60.png" />
+    <None Include="bin\Debug\images\Head\61.png" />
+    <None Include="bin\Debug\images\Head\62.png" />
+    <None Include="bin\Debug\images\Head\63.png" />
+    <None Include="bin\Debug\images\Head\64.png" />
+    <None Include="bin\Debug\images\Head\65.png" />
+    <None Include="bin\Debug\images\Head\66.png" />
+    <None Include="bin\Debug\images\Head\67.png" />
+    <None Include="bin\Debug\images\Head\68.png" />
+    <None Include="bin\Debug\images\Head\69.png" />
+    <None Include="bin\Debug\images\Head\70.png" />
+    <None Include="bin\Debug\images\Head\71.png" />
+    <None Include="bin\Debug\images\Head\72.png" />
+    <None Include="bin\Debug\images\Head\73.png" />
+    <None Include="bin\Debug\images\Head\74.png" />
+    <None Include="bin\Debug\images\Head\75.png" />
+    <None Include="bin\Debug\images\Head\76.png" />
+    <None Include="bin\Debug\images\Head\77.png" />
+    <None Include="bin\Debug\images\Head\78.png" />
+    <None Include="bin\Debug\images\Head\79.png" />
+    <None Include="bin\Debug\images\Head\80.png" />
+    <None Include="bin\Debug\images\Head\81.png" />
+    <None Include="bin\Debug\images\Head\82.png" />
+    <None Include="bin\Debug\images\Head\83.png" />
+    <None Include="bin\Debug\images\Head\84.png" />
+    <None Include="bin\Debug\images\Head\85.png" />
+    <None Include="bin\Debug\images\Head\86.png" />
+    <None Include="bin\Debug\images\Head\87.png" />
+    <None Include="bin\Debug\images\Head\88.png" />
+    <None Include="bin\Debug\images\Head\89.png" />
+    <None Include="bin\Debug\images\Head\90.png" />
+    <None Include="bin\Debug\images\Head\91.png" />
+    <None Include="bin\Debug\images\Head\92.png" />
+    <None Include="bin\Debug\images\Head\93.png" />
+    <None Include="bin\Debug\images\Head\94.png" />
+    <None Include="bin\Debug\images\Head\95.png" />
+    <None Include="bin\Debug\images\Head\96.png" />
+    <None Include="bin\Debug\images\Head\97.png" />
+    <None Include="bin\Debug\images\Head\98.png" />
+    <None Include="bin\Debug\images\Head\99.png" />
+    <None Include="bin\Debug\images\Head\100.png" />
+    <None Include="bin\Debug\images\Head\101.png" />
+    <None Include="bin\Debug\images\Head\102.png" />
+    <None Include="bin\Debug\images\Head\103.png" />
+    <None Include="bin\Debug\images\Head\104.png" />
+    <None Include="bin\Debug\images\Head\105.png" />
+    <None Include="bin\Debug\images\Head\106.png" />
+    <None Include="bin\Debug\images\Head\107.png" />
+    <None Include="bin\Debug\images\Head\108.png" />
+    <None Include="bin\Debug\images\Head\109.png" />
+    <None Include="bin\Debug\images\Head\110.png" />
+    <None Include="bin\Debug\images\Head\111.png" />
+    <None Include="bin\Debug\images\Head\112.png" />
+    <None Include="bin\Debug\images\Head\113.png" />
+    <None Include="bin\Debug\images\Head\114.png" />
+    <None Include="bin\Debug\images\Head\115.png" />
+    <None Include="bin\Debug\images\Head\116.png" />
+    <None Include="bin\Debug\images\Head\117.png" />
+    <None Include="bin\Debug\images\Head\118.png" />
+    <None Include="bin\Debug\images\Head\119.png" />
+    <None Include="bin\Debug\images\Head\120.png" />
+    <None Include="bin\Debug\images\Head\121.png" />
+    <None Include="bin\Debug\images\Head\122.png" />
+    <None Include="bin\Debug\images\Head\123.png" />
+    <None Include="bin\Debug\images\Head\124.png" />
+    <None Include="bin\Debug\images\Head\125.png" />
+    <None Include="bin\Debug\images\Head\126.png" />
+    <None Include="bin\Debug\images\Head\127.png" />
+    <None Include="bin\Debug\images\Head\128.png" />
+    <None Include="bin\Debug\images\Head\129.png" />
+    <None Include="bin\Debug\images\Head\130.png" />
+    <None Include="bin\Debug\images\Head\131.png" />
+    <None Include="bin\Debug\images\Head\132.png" />
+    <None Include="bin\Debug\images\Head\133.png" />
+    <None Include="bin\Debug\images\Head\134.png" />
+    <None Include="bin\Debug\images\Head\135.png" />
+    <None Include="bin\Debug\images\Head\136.png" />
+    <None Include="bin\Debug\images\Head\137.png" />
+    <None Include="bin\Debug\images\Head\138.png" />
+    <None Include="bin\Debug\images\Head\139.PNG" />
+    <None Include="bin\Debug\images\Head\140.PNG" />
+    <None Include="bin\Debug\images\Head\141.PNG" />
+    <None Include="bin\Debug\images\Head\142.PNG" />
+    <None Include="bin\Debug\images\Head\143.PNG" />
+    <None Include="bin\Debug\images\Head\144.PNG" />
+    <None Include="bin\Debug\images\Head\145.PNG" />
+    <None Include="bin\Debug\images\Head\146.PNG" />
+    <None Include="bin\Debug\images\Head\147.PNG" />
+    <None Include="bin\Debug\images\Head\148.PNG" />
+    <None Include="bin\Debug\images\Head\149.PNG" />
+    <None Include="bin\Debug\images\Head\150.PNG" />
+    <None Include="bin\Debug\images\Head\151.PNG" />
+    <None Include="bin\Debug\images\Head\152.PNG" />
+    <None Include="bin\Debug\images\Head\153.PNG" />
+    <None Include="bin\Debug\images\Head\154.PNG" />
+    <None Include="bin\Debug\images\Head\155.PNG" />
+    <None Include="bin\Debug\images\Head\156.PNG" />
+    <None Include="bin\Debug\images\Head\157.PNG" />
+    <None Include="bin\Debug\images\Head\158.PNG" />
+    <None Include="bin\Debug\images\Head\159.PNG" />
+    <None Include="bin\Debug\images\Head\160.PNG" />
+    <None Include="bin\Debug\images\Head\161.PNG" />
+    <None Include="bin\Debug\images\Head\162.PNG" />
+    <None Include="bin\Debug\images\Head\163.PNG" />
+    <None Include="bin\Debug\images\Head\164.PNG" />
+    <None Include="bin\Debug\images\Head\165.PNG" />
+    <None Include="bin\Debug\images\Head\166.PNG" />
+    <None Include="bin\Debug\images\Head\167.PNG" />
+    <None Include="bin\Debug\images\Head\168.PNG" />
+    <None Include="bin\Debug\images\Head\169.PNG" />
+    <None Include="bin\Debug\images\Head\170.PNG" />
+    <None Include="bin\Debug\images\Head\171.PNG" />
+    <None Include="bin\Debug\images\Head\172.PNG" />
+    <None Include="bin\Debug\images\Head\173.PNG" />
+    <None Include="bin\Debug\images\Head\174.PNG" />
+    <None Include="bin\Debug\images\Head\175.PNG" />
+    <None Include="bin\Debug\images\Head\176.PNG" />
+    <None Include="bin\Debug\images\Head\177.PNG" />
+    <None Include="bin\Debug\images\Head\178.PNG" />
+    <None Include="bin\Debug\images\Head\179.PNG" />
+    <None Include="bin\Debug\images\Head\180.PNG" />
+    <None Include="bin\Debug\images\Head\181.png" />
+    <None Include="bin\Debug\images\Head\182.png" />
+    <None Include="bin\Debug\images\Head\183.png" />
+    <None Include="bin\Debug\images\Head\184.png" />
+    <None Include="bin\Debug\images\Head\185.png" />
+    <None Include="bin\Debug\images\Head\186.png" />
+    <None Include="bin\Debug\images\Head\187.png" />
+    <None Include="bin\Debug\images\Head\188.png" />
+    <None Include="bin\Debug\images\Head\189.png" />
+    <None Include="bin\Debug\images\Head\190.png" />
+    <None Include="bin\Debug\images\Head\191.png" />
+    <None Include="bin\Debug\images\Head\192.png" />
+    <None Include="bin\Debug\images\Head\193.png" />
+    <None Include="bin\Debug\images\Head\194.png" />
+    <None Include="bin\Debug\images\Head\195.png" />
+    <None Include="bin\Debug\images\Head\196.png" />
+    <None Include="bin\Debug\images\Head\197.png" />
+    <None Include="bin\Debug\images\Head\198.png" />
+    <None Include="bin\Debug\images\Head\199.png" />
+    <None Include="bin\Debug\images\Head\200.png" />
+    <None Include="bin\Debug\images\Head\201.png" />
+    <None Include="bin\Debug\images\Head\a01.png" />
+    <None Include="bin\Debug\images\Head\a02.png" />
+    <None Include="bin\Debug\images\Head\a03.png" />
+    <None Include="bin\Debug\images\Head\a04.png" />
+    <None Include="bin\Debug\images\Head\a05.png" />
+    <None Include="bin\Debug\images\Head\a07.png" />
+    <None Include="bin\Debug\images\Head\b01.png" />
+    <None Include="bin\Debug\images\Head\b02.png" />
+    <None Include="bin\Debug\images\Head\b03.png" />
+    <None Include="bin\Debug\images\Head\b04.png" />
+    <None Include="bin\Debug\images\Head\b05.png" />
+    <None Include="bin\Debug\images\Head\b06.png" />
+    <None Include="bin\Debug\images\Head\b07.png" />
+    <None Include="bin\Debug\images\Head\c01.png" />
+    <None Include="bin\Debug\images\Head\c02.png" />
+    <None Include="bin\Debug\images\Head\c03.png" />
+    <None Include="bin\Debug\images\Head\c04.png" />
+    <None Include="bin\Debug\images\Head\c05.png" />
+    <None Include="bin\Debug\images\Head\c06.png" />
+    <None Include="bin\Debug\images\Head\c07.png" />
+    <None Include="bin\Debug\images\Head\d01.png" />
+    <None Include="bin\Debug\images\Head\d02.png" />
+    <None Include="bin\Debug\images\Head\d03.png" />
+    <None Include="bin\Debug\images\Head\d04.png" />
+    <None Include="bin\Debug\images\Head\d05.png" />
+    <None Include="bin\Debug\images\Head\d06.png" />
+    <None Include="bin\Debug\images\Head\d07.png" />
+    <None Include="bin\Debug\images\Head\e01.png" />
+    <None Include="bin\Debug\images\Head\e02.png" />
+    <None Include="bin\Debug\images\Head\e03.png" />
+    <None Include="bin\Debug\images\Head\e04.png" />
+    <None Include="bin\Debug\images\Head\e05.png" />
+    <None Include="bin\Debug\images\Head\e06.png" />
+    <None Include="bin\Debug\images\Head\f01.png" />
+    <None Include="bin\Debug\images\Head\f02.png" />
+    <None Include="bin\Debug\images\Head\f03.png" />
+    <None Include="bin\Debug\images\Head\f04.png" />
+    <None Include="bin\Debug\images\Head\f05.png" />
+    <None Include="bin\Debug\images\Head\f06.png" />
+    <None Include="bin\Debug\images\Head\g01.png" />
+    <None Include="bin\Debug\images\Head\g02.png" />
+    <None Include="bin\Debug\images\Head\g03.png" />
+    <None Include="bin\Debug\images\Head\g04.png" />
+    <None Include="bin\Debug\images\Head\g05.png" />
+    <None Include="bin\Debug\images\Head\normal.jpg" />
+    <None Include="bin\Debug\images\Head\normal.PNG" />
+    <None Include="bin\Debug\images\status\speaker.ico" />
+    <None Include="bin\Debug\images\BCF_Title16.ico" />
+    <None Include="bin\Debug\images\QQshow\qqshow2_boy.gif" />
+    <None Include="bin\Debug\images\QQshow\qqshow2_girl.gif" />
+    <Content Include="ico.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<StarInfo>
+    <Star Name="白羊座" Code="1" />
+    <Star Name="金牛座" Code="2" />
+    <Star Name="双子座" Code="3" />
+    <Star Name="巨蟹座" Code="4" />
+    <Star Name="狮子座" Code="5" />
+    <Star Name="处女座" Code="6" />
+    <Star Name="天秤座" Code="7" />
+    <Star Name="天蝎座" Code="8" />
+    <Star Name="射手座" Code="9" />
+    <Star Name="魔蝎座" Code="10" />
+    <Star Name="水平座" Code="11" />
+    <Star Name="双鱼座" Code="12" />
+</StarInfo>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<BloodTypeInfo>
+	<BloodType Name="A型" Code="1" />
+	<BloodType Name="B型" Code="2" />
+	<BloodType Name="O型" Code="3" />
+	<BloodType Name="AB型" Code="4" />
+</BloodTypeInfo>

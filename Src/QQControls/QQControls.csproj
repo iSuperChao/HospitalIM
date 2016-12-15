@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{91F83D30-0E8C-4168-BC7E-1DE22B6F6ABC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QQControls</RootNamespace>
+    <AssemblyName>QQControls</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FileProgress.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FileProgress.Designer.cs">
+      <DependentUpon>FileProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginFrame.Designer.cs">
+      <DependentUpon>LoginFrame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFrame.designer.cs">
+      <DependentUpon>MainFrame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Monitor.cs" />
+    <Compile Include="MonitorUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MonitorUserControl.designer.cs">
+      <DependentUpon>MonitorUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterFrame.Designer.cs">
+      <DependentUpon>RegisterFrame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Images.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Images.resx</DependentUpon>
+    </Compile>
+    <Compile Include="MyButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyButton.Designer.cs">
+      <DependentUpon>MyButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShowHead.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ShowHead.Designer.cs">
+      <DependentUpon>ShowHead.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ToolButton.Designer.cs">
+      <DependentUpon>ToolButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win32.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FileProgress.resx">
+      <DependentUpon>FileProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginFrame.resx">
+      <DependentUpon>LoginFrame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFrame.resx">
+      <DependentUpon>MainFrame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MonitorUserControl.resx">
+      <DependentUpon>MonitorUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterFrame.resx">
+      <DependentUpon>RegisterFrame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Images.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyButton.resx">
+      <DependentUpon>MyButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowHead.resx">
+      <DependentUpon>ShowHead.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolButton.resx">
+      <DependentUpon>ToolButton.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\All_window_sizeGripFile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_close_disable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_close_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_close_highlight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_close_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_max_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_max_highlight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_max_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_mini_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_mini_highlight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_mini_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_restore_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_restore_highlight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_restore_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_btn_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_btn_focus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_btn_highlight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_btn_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoginPanel_window_windowBkg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Main_Title.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logining.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logining_Vip.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainPanel_window_windowBkg.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mainpanel_tabctrl_background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\main_bluelight_bkg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ContactHeadBg_Hightlight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ContactHeadBg_Normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddAccountBtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddAccountBtn_Down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddAccountBtn_mouseover.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
